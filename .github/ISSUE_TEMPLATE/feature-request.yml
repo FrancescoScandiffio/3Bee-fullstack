@@ -30,18 +30,6 @@ body:
       placeholder: 0.5 h
     validations:
       required: false
-
-  - type: dropdown
-    attributes:
-      label: Priority
-      description: How critical is this for the MVP?
-      options:
-        - High
-        - Medium
-        - Low
-    validations:
-      required: true
-
   - type: textarea
     attributes:
       label: Notes / Reasoning

@@ -1,0 +1,52 @@
+name: Feature or Task
+description: Use this template for any planned task, feature, or improvement.
+title: "[FEATURE] "
+labels: ["planning"]
+body:
+  - type: textarea
+    attributes:
+      label: Description
+      description: Briefly describe what needs to be done and why it matters.
+      placeholder: >
+        What is this issue about? What does it affect (BE, FE, CI, etc.)? Why is it needed?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Tasks
+      description: Break the issue into actionable subtasks.
+      placeholder: >
+        - [ ] Define schema X
+        - [ ] Create API route
+        - [ ] Add unit test
+    validations:
+      required: false
+
+  - type: input
+    attributes:
+      label: Estimated Time
+      description: Provide an estimate of how long this will take (in hours).
+      placeholder: 0.5 h
+    validations:
+      required: false
+
+  - type: dropdown
+    attributes:
+      label: Priority
+      description: How critical is this for the MVP?
+      options:
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Notes / Reasoning
+      description: Include anything else useful such as scoring rationale, dependencies, risks, etc.
+      placeholder: >
+        Notes placeholder
+    validations:
+      required: false

@@ -4,7 +4,7 @@ from uuid import uuid4
 import pytest
 from pydantic import ValidationError
 
-from backend.app.schemas.chat import ChatRequest, ChatMessage, ChatResponse
+from app.schemas.chat import ChatRequest, ChatMessage, ChatResponse
 
 
 def test_chat_request_valid():
